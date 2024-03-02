@@ -7,6 +7,14 @@ public class Ammo : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] int ammoAmount = 10;
 
+    [SerializeField] AmmoSlot[] ammoSlots;
+
+    [System.Serializable]
+    private class AmmoSlot{
+        public AmmoType ammotype;
+        public int ammoAmount;
+    }
+
     public int GetAmmo()
     {
         return ammoAmount;

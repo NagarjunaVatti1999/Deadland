@@ -19,6 +19,11 @@ public class Weapon : MonoBehaviour
     {
         
     }
+    private void OnEnable() {
+        canShoot = true;    //this is to nulify the side effect of couroutine. if we sudddenly switch the 
+                            //weapon in between coroutine then it might get stuck in false state
+                            //so when a new weapon is enabled we set the canshoot to true
+    }
 
     // Update is called once per frame
     void Update()

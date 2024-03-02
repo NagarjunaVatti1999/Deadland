@@ -487,6 +487,38 @@ PrefabInstance:
       propertyPath: TimeBetweenShots
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7762811261846998947, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762872909316522469, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762875534640221837, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762897981688713441, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765352058945782675, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765358442746629527, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765750563261000327, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7766110485382880629, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8682357049871901509, guid: ee9ac54e4ec6b214ca522b00b6e2e277, type: 3}
       propertyPath: m_Name
       value: Carbine
@@ -860,6 +892,38 @@ PrefabInstance:
     - target: {fileID: 595293616205543473, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
       propertyPath: TimeBetweenShots
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 729783473465276582, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 729837198764206052, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 729859865045825928, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 729862748015654624, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 746887062736415344, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 747247324017057154, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 747498415120562834, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 747508526680388758, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
+      propertyPath: playOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1748282368278617486, guid: 9456ba13b5efbb14f8a36f2d49c07b88, type: 3}
       propertyPath: m_Name
