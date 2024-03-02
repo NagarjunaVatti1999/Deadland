@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Transform player;
     [SerializeField] float chaseRange;
+    [SerializeField] float turnspeed = 5f;
 
     float distancetoTarget = Mathf.Infinity;
     bool isProvoked = false;
@@ -34,6 +35,7 @@ public class EnemyAI : MonoBehaviour
 
     private void EngageTarget()
     {
+        FactTarget();
         if(distancetoTarget >= Enemy.stoppingDistance)
         {
             ChaseTarget();
@@ -47,12 +49,25 @@ public class EnemyAI : MonoBehaviour
 
     private void AttackTarget()
     {
-        Debug.Log("attacking");
+        GetComponent<Animator>().SetBool("attack", true);
     }
 
     private void ChaseTarget()
     {
+        GetComponent<Animator>().SetBool("attack", false);
+        GetComponent<Animator>().SetTrigger("move");
         Enemy.SetDestination(player.position);
+    }
+
+    public void OnDamageTaken()
+    {
+        isProvoked = true;
+    }
+    private void FactTarget()
+    {
+        Vector3 direction =  (player.position - transform.position).normalized;
+        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime*turnspeed);
     }
 
     void OnDrawGizmosSelected() {
