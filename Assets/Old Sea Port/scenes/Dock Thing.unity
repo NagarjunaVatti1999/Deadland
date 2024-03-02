@@ -16473,6 +16473,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 64438420d273554448959a35c747f25a, type: 3}
   m_PrefabInstance: {fileID: 1394601421}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1199868811 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2539399510557509212, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
+  m_PrefabInstance: {fileID: 5116029373037317178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1202338621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29978,6 +29983,10 @@ PrefabInstance:
       propertyPath: SprintSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1261336217582911270, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 8997996946051687093}
     - target: {fileID: 2061470647514017401, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
@@ -29997,6 +30006,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2061470647514017401, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8997996946051687090}
+    - targetCorrespondingSourceObject: {fileID: 2061470647514017401, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8997996946051687091}
+    - targetCorrespondingSourceObject: {fileID: 2061470647514017401, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8997996946051687092}
+    - targetCorrespondingSourceObject: {fileID: 2061470647514017401, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8997996946051687093}
   m_SourcePrefab: {fileID: 100100000, guid: 3f5cdf7f5e6f6444c872f722d65a1198, type: 3}
 --- !u!4 &8997996946051687084 stripped
 Transform:
@@ -30016,6 +30034,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 1959397971}
+--- !u!114 &8997996946051687091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979087959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecb003518629be9468fa5797bb4c43b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PHealth: 100
+--- !u!114 &8997996946051687092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979087959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cccb528eb5bc04e8a95f4be8853b64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPSCamera: {fileID: 1199868811}
+  ZoomOutFOV: 60
+  ZoomInFOV: 20
+--- !u!114 &8997996946051687093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979087959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c8be0d738ede4409a6f505dc5a5da0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
