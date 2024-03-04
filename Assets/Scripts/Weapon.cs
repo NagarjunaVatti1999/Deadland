@@ -13,6 +13,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleflash;
     [SerializeField] GameObject BulletImpact;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
     [SerializeField] float TimeBetweenShots = 0.5f;
     bool canShoot = true;
     void Start()
@@ -36,9 +37,9 @@ public class Weapon : MonoBehaviour
     IEnumerator Shoot()
     {
         canShoot = false;
-        if(ammoSlot.GetAmmo() > 0)
+        if(ammoSlot.GetAmmo(ammoType) > 0)
         {
-            ammoSlot.DecreaseAmmo();
+            ammoSlot.DecreaseAmmo(ammoType);
             PlaMuzzleFlash();
             ProcessRaycast();
         }

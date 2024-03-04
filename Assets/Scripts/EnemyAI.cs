@@ -14,14 +14,25 @@ public class EnemyAI : MonoBehaviour
     float distancetoTarget = Mathf.Infinity;
     bool isProvoked = false;
     NavMeshAgent Enemy;
+    EnemyHealth health;
+    CapsuleCollider Capcoll;
     void Start()
     {
         Enemy = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
+        Capcoll = GetComponent<CapsuleCollider>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(health.isDead())
+        {
+            Capcoll.enabled = false;
+            enabled = false;
+            Enemy.enabled = false;
+            return;
+        }
         distancetoTarget = Vector3.Distance(player.position, transform.position);
         if(isProvoked)
         {

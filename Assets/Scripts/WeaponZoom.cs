@@ -15,6 +15,10 @@ public class WeaponZoom : MonoBehaviour
     }
 
     // Update is called once per frame
+    void OnDisable() {
+        FPSCamera.fieldOfView = ZoomOutFOV;
+        zoomflag = false;
+    }
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
