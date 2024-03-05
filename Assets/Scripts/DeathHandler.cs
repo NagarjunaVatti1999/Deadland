@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
@@ -18,6 +17,7 @@ public class DeathHandler : MonoBehaviour
     }
     public void HandleDeath()
     {
+        GetComponent<FirstPersonController>().enabled = false;
         gameOverCanvas.enabled = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0;
